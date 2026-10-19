@@ -1,0 +1,949 @@
+{
+  "departments": [
+    {
+      "id": "d1",
+      "name": "Roads & Highways",
+      "code": "RH",
+      "description": "Road surfaces, potholes, highway repairs, street paving, and bridges.",
+      "headName": "Director Jones",
+      "headEmail": "senior@example.com",
+      "status": "Active",
+      "serviceAreas": [
+        "Annur",
+        "Coimbatore",
+        "Zone 1",
+        "Zone 2",
+        "Highway Corridor"
+      ]
+    },
+    {
+      "id": "d2",
+      "name": "Water Supply",
+      "code": "WS",
+      "description": "Drinking water pipelines, leakage redressal, quality testing, and water tankers.",
+      "headName": "Director Venkat",
+      "headEmail": "director.water@civic.gov",
+      "status": "Active",
+      "serviceAreas": [
+        "Annur",
+        "Coimbatore",
+        "Zone 1",
+        "Zone 2",
+        "Central Zone"
+      ]
+    },
+    {
+      "id": "d3",
+      "name": "Sanitation & Waste",
+      "code": "SAN",
+      "description": "Solid waste management, garbage clearance, open drain desilting, and public hygiene.",
+      "headName": "Director Sharma",
+      "headEmail": "sharma.sanitation@civic.gov",
+      "status": "Active",
+      "serviceAreas": [
+        "Annur",
+        "Coimbatore",
+        "Ward 1-20"
+      ]
+    },
+    {
+      "id": "dept-elec",
+      "name": "Electricity & Lighting",
+      "code": "ELEC",
+      "description": "Street lighting, streetlight poles, hazardous wiring, transformers, and public illumination.",
+      "headName": "Director Khan",
+      "headEmail": "khan.safety@civic.gov",
+      "status": "Active",
+      "serviceAreas": [
+        "Annur",
+        "Coimbatore",
+        "All Zones"
+      ]
+    },
+    {
+      "id": "dept-health",
+      "name": "Public Health & Disease Control",
+      "code": "PH",
+      "description": "Vector control, mosquito and dengue breeding, disease surveillance, and sanitation health inspections.",
+      "headName": "Dr. Radhakrishnan",
+      "headEmail": "health.director@civic.gov",
+      "status": "Active",
+      "serviceAreas": [
+        "Annur",
+        "Coimbatore",
+        "Urban & Rural"
+      ]
+    },
+    {
+      "id": "dept-animal",
+      "name": "Animal Husbandry & Stray Control",
+      "code": "AH",
+      "description": "Stray dog control, anti-rabies management, stray cattle, and municipal animal welfare.",
+      "headName": "Dr. Balasubramanian",
+      "headEmail": "animal.director@civic.gov",
+      "status": "Active",
+      "serviceAreas": [
+        "Annur",
+        "Coimbatore",
+        "Zone 1",
+        "Zone 2"
+      ]
+    },
+    {
+      "id": "dept-edu",
+      "name": "Education & School Infrastructure",
+      "code": "EDU",
+      "description": "Government school buildings, classroom repairs, compound walls, student amenities, and playgrounds.",
+      "headName": "Director Meenakshi",
+      "headEmail": "education.director@civic.gov",
+      "status": "Active",
+      "serviceAreas": [
+        "Annur Taluk Schools"
+      ]
+    },
+    {
+      "id": "dept-trans",
+      "name": "Public Transport",
+      "code": "TRANS",
+      "description": "City bus services, commuter frequency, bus shelter conditions, and municipal transit stops.",
+      "headName": "Director Jayakumar",
+      "headEmail": "transport.director@civic.gov",
+      "status": "Active",
+      "serviceAreas": [
+        "Coimbatore North Division"
+      ]
+    },
+    {
+      "id": "dept-rev",
+      "name": "Revenue & Property Tax",
+      "code": "REV",
+      "description": "Property tax assessments, municipal tax demands, receipt corrections, and municipal licensing.",
+      "headName": "Tahsildar Palanisamy",
+      "headEmail": "revenue.tahsildar@civic.gov",
+      "status": "Active",
+      "serviceAreas": [
+        "Annur Sub-Taluk"
+      ]
+    },
+    {
+      "id": "dept-agri",
+      "name": "Agriculture & Irrigation",
+      "code": "AGRI",
+      "description": "Irrigation canals, agricultural runoff, and farmer market civic facilities.",
+      "headName": "Director Senthil",
+      "headEmail": "agri.director@civic.gov",
+      "status": "Active",
+      "serviceAreas": [
+        "Annur Rural Belts"
+      ]
+    },
+    {
+      "id": "dept-welfare",
+      "name": "Social Welfare",
+      "code": "SW",
+      "description": "Welfare schemes, senior citizen centers, and community civic halls.",
+      "headName": "Director Revathi",
+      "headEmail": "welfare.director@civic.gov",
+      "status": "Active",
+      "serviceAreas": [
+        "District Wards"
+      ]
+    },
+    {
+      "id": "dept-admin",
+      "name": "Municipal Administration",
+      "code": "MA",
+      "description": "Overall municipal administration, inter-departmental dispatch, and general civic issues.",
+      "headName": "Commissioner Ramanathan",
+      "headEmail": "commissioner@civic.gov",
+      "status": "Active",
+      "serviceAreas": [
+        "Entire Municipality"
+      ]
+    },
+    {
+      "id": "dept-1791381940108",
+      "name": "Public Works & Parks",
+      "code": "PWP",
+      "description": "Municipal Public Works & Parks division.",
+      "headName": "Director Shanthi",
+      "headEmail": "shanthi.parks@civic.gov",
+      "status": "Active",
+      "serviceAreas": [
+        "Zone 1",
+        "Zone 2",
+        "Annur"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-roads",
+      "name": "Road Damage & Potholes",
+      "code": "CAT_ROAD",
+      "description": "Craters, broken asphalt, damaged footpaths, potholes on roadway.",
+      "defaultPriority": "High",
+      "keywords": [
+        "pothole",
+        "crater",
+        "asphalt",
+        "road",
+        "highway",
+        "tar",
+        "bridge",
+        "pavement"
+      ]
+    },
+    {
+      "id": "cat-water-leak",
+      "name": "Drinking Water Leakage & Burst",
+      "code": "CAT_WTR_LEAK",
+      "description": "Pipeline rupture, gushing water, valve leaks, supply disruptions.",
+      "defaultPriority": "Critical",
+      "keywords": [
+        "pipeline",
+        "water",
+        "leakage",
+        "burst",
+        "pipe",
+        "gushing",
+        "potable",
+        "taps"
+      ]
+    },
+    {
+      "id": "cat-water-contam",
+      "name": "Water Contamination & Odor",
+      "code": "CAT_WTR_CONT",
+      "description": "Brown water, sewage mixing, foul smell in tap drinking water.",
+      "defaultPriority": "High",
+      "keywords": [
+        "muddy",
+        "contamination",
+        "drinking water",
+        "smell",
+        "brown water",
+        "chlorine",
+        "dirty water"
+      ]
+    },
+    {
+      "id": "cat-garbage",
+      "name": "Garbage Collection & Dump Overflow",
+      "code": "CAT_GARB",
+      "description": "Uncollected community waste bins, roadside trash dumping, garbage stench.",
+      "defaultPriority": "High",
+      "keywords": [
+        "garbage",
+        "waste",
+        "dump",
+        "bin",
+        "trash",
+        "debris",
+        "uncollected",
+        "spill"
+      ]
+    },
+    {
+      "id": "cat-drainage",
+      "name": "Open Sewage & Drain Overflows",
+      "code": "CAT_DRAIN",
+      "description": "Blocked silt, stagnant sewage water, overflowing gutters and manholes.",
+      "defaultPriority": "High",
+      "keywords": [
+        "sewer",
+        "drainage",
+        "gutter",
+        "overflow",
+        "manhole",
+        "stagnant",
+        "silt"
+      ]
+    },
+    {
+      "id": "cat-street-light",
+      "name": "Street Lighting",
+      "code": "CAT_LIGHT",
+      "description": "Dark road, flickering lamp, non-functional streetlights and traffic signals.",
+      "defaultPriority": "Medium",
+      "keywords": [
+        "street light",
+        "pole",
+        "dark",
+        "bulb",
+        "traffic signal",
+        "lamp",
+        "darkness"
+      ]
+    },
+    {
+      "id": "cat-hazard-wire",
+      "name": "Hazardous Electrical Wires",
+      "code": "CAT_ELEC_HAZ",
+      "description": "Live hanging cables, sparking transformer, shock electrocution hazard.",
+      "defaultPriority": "Critical",
+      "keywords": [
+        "wire",
+        "sparking",
+        "hanging",
+        "cable",
+        "shock",
+        "transformer",
+        "high voltage"
+      ]
+    },
+    {
+      "id": "cat-stray-animal",
+      "name": "Stray Animal Control",
+      "code": "CAT_ANIMAL",
+      "description": "Aggressive stray dogs, dog bites, rabies fear, stray cattle blocking traffic.",
+      "defaultPriority": "High",
+      "keywords": [
+        "stray dog",
+        "rabies",
+        "animal",
+        "dog bite",
+        "cattle",
+        "stray cattle",
+        "dog menace",
+        "barking"
+      ]
+    },
+    {
+      "id": "cat-public-health",
+      "name": "Public Health",
+      "code": "CAT_HLTH",
+      "description": "Dengue fever outbreak, mosquito breeding, unsanitary food stalls.",
+      "defaultPriority": "Critical",
+      "keywords": [
+        "dengue",
+        "malaria",
+        "mosquito",
+        "breeding",
+        "fogging",
+        "epidemic",
+        "fever",
+        "health hazard"
+      ]
+    },
+    {
+      "id": "cat-school-infra",
+      "name": "School Infrastructure",
+      "code": "CAT_EDU",
+      "description": "Leaking classroom roof, broken school wall, unsafe school toilets and facilities.",
+      "defaultPriority": "High",
+      "keywords": [
+        "school",
+        "classroom",
+        "playground",
+        "school wall",
+        "drinking water school",
+        "midday meal",
+        "student"
+      ]
+    },
+    {
+      "id": "cat-bus-transit",
+      "name": "Public Transport",
+      "code": "CAT_TRANS",
+      "description": "Cancelled bus schedule, low bus frequency, damaged public bus shelter.",
+      "defaultPriority": "Medium",
+      "keywords": [
+        "bus",
+        "bus stop",
+        "transport",
+        "route",
+        "bus frequency",
+        "transit",
+        "conductor",
+        "bus shelter"
+      ]
+    },
+    {
+      "id": "cat-property-tax",
+      "name": "Property Tax",
+      "code": "CAT_TAX",
+      "description": "Wrong tax demand, missing online receipt, assessment error, mutation.",
+      "defaultPriority": "Medium",
+      "keywords": [
+        "property tax",
+        "assessment",
+        "tax receipt",
+        "bill",
+        "revenue",
+        "tax calculation",
+        "mutation"
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "id": "map-1",
+      "categoryId": "cat-roads",
+      "categoryName": "Road Damage & Potholes",
+      "departmentId": "d1",
+      "departmentName": "Roads & Highways",
+      "active": true,
+      "priority": 1,
+      "description": "Primary roads responsibility"
+    },
+    {
+      "id": "map-2",
+      "categoryId": "cat-water-leak",
+      "categoryName": "Drinking Water Leakage & Burst",
+      "departmentId": "d2",
+      "departmentName": "Water Supply",
+      "active": true,
+      "priority": 1,
+      "description": "Water department pipeline repair"
+    },
+    {
+      "id": "map-3",
+      "categoryId": "cat-water-contam",
+      "categoryName": "Water Contamination & Odor",
+      "departmentId": "d2",
+      "departmentName": "Water Supply",
+      "active": true,
+      "priority": 1,
+      "description": "Water purification and quality inspection"
+    },
+    {
+      "id": "map-4",
+      "categoryId": "cat-garbage",
+      "categoryName": "Garbage Collection & Dump Overflow",
+      "departmentId": "d3",
+      "departmentName": "Sanitation & Waste",
+      "active": true,
+      "priority": 1,
+      "description": "Solid waste management"
+    },
+    {
+      "id": "map-5",
+      "categoryId": "cat-drainage",
+      "categoryName": "Open Sewage & Drain Overflows",
+      "departmentId": "d3",
+      "departmentName": "Sanitation & Waste",
+      "active": true,
+      "priority": 1,
+      "description": "Stormwater and sewerage network"
+    },
+    {
+      "id": "map-6",
+      "categoryId": "cat-street-light",
+      "categoryName": "Street Lighting",
+      "departmentId": "dept-elec",
+      "departmentName": "Electricity & Lighting",
+      "active": true,
+      "priority": 1,
+      "description": "Public electrical lighting"
+    },
+    {
+      "id": "map-7",
+      "categoryId": "cat-hazard-wire",
+      "categoryName": "Hazardous Electrical Wires",
+      "departmentId": "dept-elec",
+      "departmentName": "Electricity & Lighting",
+      "active": true,
+      "priority": 1,
+      "description": "Urgent electrical shock hazard"
+    },
+    {
+      "id": "map-8",
+      "categoryId": "cat-stray-animal",
+      "categoryName": "Stray Animal Control",
+      "departmentId": "dept-animal",
+      "departmentName": "Animal Husbandry & Stray Control",
+      "active": true,
+      "priority": 1,
+      "description": "Veterinary capture van & rabies control"
+    },
+    {
+      "id": "map-9",
+      "categoryId": "cat-public-health",
+      "categoryName": "Public Health",
+      "departmentId": "dept-health",
+      "departmentName": "Public Health & Disease Control",
+      "active": true,
+      "priority": 1,
+      "description": "District epidemiologist and fogging unit"
+    },
+    {
+      "id": "map-10",
+      "categoryId": "cat-school-infra",
+      "categoryName": "School Infrastructure",
+      "departmentId": "dept-edu",
+      "departmentName": "Education & School Infrastructure",
+      "active": true,
+      "priority": 1,
+      "description": "Taluk educational officer & school public works"
+    },
+    {
+      "id": "map-11",
+      "categoryId": "cat-bus-transit",
+      "categoryName": "Public Transport",
+      "departmentId": "dept-trans",
+      "departmentName": "Public Transport",
+      "active": true,
+      "priority": 1,
+      "description": "Transport division bus depot manager"
+    },
+    {
+      "id": "map-12",
+      "categoryId": "cat-property-tax",
+      "categoryName": "Property Tax",
+      "departmentId": "dept-rev",
+      "departmentName": "Revenue & Property Tax",
+      "active": true,
+      "priority": 1,
+      "description": "Revenue inspector & tax assessment"
+    },
+    {
+      "id": "map-water-direct",
+      "categoryId": "cat-water-leak",
+      "categoryName": "Water Supply",
+      "departmentId": "d2",
+      "departmentName": "Water Supply",
+      "active": true,
+      "priority": 1,
+      "description": "Direct water supply mapping"
+    },
+    {
+      "id": "map-roads-direct",
+      "categoryId": "cat-roads",
+      "categoryName": "Roads & Highways",
+      "departmentId": "d1",
+      "departmentName": "Roads & Highways",
+      "active": true,
+      "priority": 1,
+      "description": "Direct roads mapping"
+    },
+    {
+      "id": "map-sanit-direct",
+      "categoryId": "cat-garbage",
+      "categoryName": "Sanitation & Waste",
+      "departmentId": "d3",
+      "departmentName": "Sanitation & Waste",
+      "active": true,
+      "priority": 1,
+      "description": "Direct sanitation mapping"
+    },
+    {
+      "id": "map-elec-direct",
+      "categoryId": "cat-street-light",
+      "categoryName": "Electricity & Lighting",
+      "departmentId": "dept-elec",
+      "departmentName": "Electricity & Lighting",
+      "active": true,
+      "priority": 1,
+      "description": "Direct electricity mapping"
+    },
+    {
+      "id": "map-animal-direct",
+      "categoryId": "cat-stray-animal",
+      "categoryName": "Animal Husbandry & Stray Control",
+      "departmentId": "dept-animal",
+      "departmentName": "Animal Husbandry & Stray Control",
+      "active": true,
+      "priority": 1,
+      "description": "Direct animal mapping"
+    }
+  ],
+  "officerAssignments": [
+    {
+      "id": "assign-1",
+      "officerId": "2",
+      "officerName": "Officer Smith",
+      "officerEmail": "officer@example.com",
+      "officerPhone": "+91 9845012345",
+      "departmentId": "d1",
+      "departmentName": "Roads & Highways",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "Main Road & Central Ward",
+      "active": true,
+      "maxWorkload": 15
+    },
+    {
+      "id": "assign-2",
+      "officerId": "18",
+      "officerName": "Officer Ravi",
+      "officerEmail": "ravi.roads@civic.gov",
+      "officerPhone": "+91 9845022334",
+      "departmentId": "d1",
+      "departmentName": "Roads & Highways",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 2",
+      "areaWard": "North Bypass & Rural Ward",
+      "active": true,
+      "maxWorkload": 15
+    },
+    {
+      "id": "assign-3",
+      "officerId": "6",
+      "officerName": "Officer Rajesh",
+      "officerEmail": "rajesh.water@civic.gov",
+      "officerPhone": "+91 9845023456",
+      "departmentId": "d2",
+      "departmentName": "Water Supply",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "Bazaar & Ward 1-5",
+      "active": true,
+      "maxWorkload": 12
+    },
+    {
+      "id": "assign-4",
+      "officerId": "17",
+      "officerName": "Officer Kumar",
+      "officerEmail": "kumar.water@civic.gov",
+      "officerPhone": "+91 9845011223",
+      "departmentId": "d2",
+      "departmentName": "Water Supply",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 2",
+      "areaWard": "South Ward 6-12",
+      "active": true,
+      "maxWorkload": 12
+    },
+    {
+      "id": "assign-5",
+      "officerId": "7",
+      "officerName": "Officer Priya",
+      "officerEmail": "priya.sanitation@civic.gov",
+      "officerPhone": "+91 9845034567",
+      "departmentId": "d3",
+      "departmentName": "Sanitation & Waste",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "All Zones",
+      "areaWard": "Urban Core Wards",
+      "active": true,
+      "maxWorkload": 15
+    },
+    {
+      "id": "assign-6",
+      "officerId": "9",
+      "officerName": "Officer David",
+      "officerEmail": "david.safety@civic.gov",
+      "officerPhone": "+91 9845045678",
+      "departmentId": "dept-elec",
+      "departmentName": "Electricity & Lighting",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "All Zones",
+      "areaWard": "Taluk Electricity Grid",
+      "active": true,
+      "maxWorkload": 15
+    },
+    {
+      "id": "assign-7",
+      "officerId": "12",
+      "officerName": "Officer Anitha",
+      "officerEmail": "anitha.animal@civic.gov",
+      "officerPhone": "+91 9845056789",
+      "departmentId": "dept-animal",
+      "departmentName": "Animal Husbandry & Stray Control",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "Annur Municipal Area",
+      "active": true,
+      "maxWorkload": 10
+    },
+    {
+      "id": "assign-8",
+      "officerId": "13",
+      "officerName": "Officer Suresh",
+      "officerEmail": "suresh.health@civic.gov",
+      "officerPhone": "+91 9845067890",
+      "departmentId": "dept-health",
+      "departmentName": "Public Health & Disease Control",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "All Zones",
+      "areaWard": "Primary Health Jurisdiction",
+      "active": true,
+      "maxWorkload": 10
+    },
+    {
+      "id": "assign-9",
+      "officerId": "14",
+      "officerName": "Officer Meena",
+      "officerEmail": "meena.edu@civic.gov",
+      "officerPhone": "+91 9845078901",
+      "departmentId": "dept-edu",
+      "departmentName": "Education & School Infrastructure",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "School Cluster 1",
+      "active": true,
+      "maxWorkload": 10
+    },
+    {
+      "id": "assign-10",
+      "officerId": "15",
+      "officerName": "Officer Karthik",
+      "officerEmail": "karthik.trans@civic.gov",
+      "officerPhone": "+91 9845089012",
+      "departmentId": "dept-trans",
+      "departmentName": "Public Transport",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "All Zones",
+      "areaWard": "Taluk Bus Network",
+      "active": true,
+      "maxWorkload": 12
+    },
+    {
+      "id": "assign-11",
+      "officerId": "16",
+      "officerName": "Officer Murugan",
+      "officerEmail": "murugan.rev@civic.gov",
+      "officerPhone": "+91 9845090123",
+      "departmentId": "dept-rev",
+      "departmentName": "Revenue & Property Tax",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "All Zones",
+      "areaWard": "Revenue Assessment Circle",
+      "active": true,
+      "maxWorkload": 15
+    },
+    {
+      "id": "assign-1791381949006",
+      "officerId": "off-1791381949006",
+      "officerName": "Officer Vikram",
+      "officerEmail": "vikram.parks@civic.gov",
+      "officerPhone": "+91 9845099887",
+      "departmentId": "dept-1791381940108",
+      "departmentName": "Public Works & Parks",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "Central Ward",
+      "maxWorkload": 15,
+      "active": true
+    },
+    {
+      "id": "assign-1791520046264",
+      "officerId": "54103142-8658-499d-9406-ad5f459208e4",
+      "officerName": "Officer Senthil",
+      "officerEmail": "senthil.water@civic.gov",
+      "officerPhone": "+91 9845011223",
+      "departmentId": "d2",
+      "departmentName": "Water Supply",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "All Areas",
+      "designation": "Assistant Engineer (Water Works)",
+      "maxWorkload": 15,
+      "active": true
+    },
+    {
+      "id": "assign-1791520696621",
+      "officerId": "a8558c5b-352a-4644-b94c-697d2193927c",
+      "officerName": "Officer Raman",
+      "officerEmail": "raman.water@civic.gov",
+      "officerPhone": "+91 9845011122",
+      "departmentId": "d2",
+      "departmentName": "Water Supply",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "All Areas",
+      "designation": "Assistant Engineer (Water Works)",
+      "maxWorkload": 15,
+      "active": true
+    },
+    {
+      "id": "assign-1791520696652",
+      "officerId": "2b728643-14fc-458f-9656-3f638b58b601",
+      "officerName": "Officer Murugan",
+      "officerEmail": "murugan.sanitation@civic.gov",
+      "officerPhone": "+91 9845033344",
+      "departmentId": "d3",
+      "departmentName": "Sanitation & Waste",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 2",
+      "areaWard": "All Areas",
+      "designation": "Sanitary Inspector",
+      "maxWorkload": 15,
+      "active": true
+    },
+    {
+      "id": "assign-1791620367339",
+      "officerId": "df7e2bf1-b299-47b8-aaa6-2bc2e601d8fe",
+      "officerName": "Officer Mohan",
+      "officerEmail": "mohan.water@civic.gov",
+      "officerPhone": "+91 9845033445",
+      "departmentId": "d2",
+      "departmentName": "Water Supply",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "All Areas",
+      "designation": "Assistant Engineer",
+      "maxWorkload": 15,
+      "active": true
+    },
+    {
+      "id": "assign-1791620627902",
+      "officerId": "3a089cdb-e278-4a14-aef0-4a7e725ffc7b",
+      "officerName": "shree",
+      "officerEmail": "shree637@gmail.com",
+      "officerPhone": "+91 8695748687",
+      "departmentId": "d2",
+      "departmentName": "Water Supply",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "All Areas",
+      "designation": "Field Officer",
+      "maxWorkload": 15,
+      "active": true
+    },
+    {
+      "id": "assign-1791620717998",
+      "officerId": "068d1bd3-0749-41b2-86fd-223b5101d738",
+      "officerName": "kowshi",
+      "officerEmail": "kowshi@gmail.com",
+      "officerPhone": "+91 8965412369",
+      "departmentId": "dept-trans",
+      "departmentName": "Public Transport",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "All Areas",
+      "designation": "Field Officer",
+      "maxWorkload": 15,
+      "active": true
+    },
+    {
+      "id": "assign-1791621144264",
+      "officerId": "7dc5f6b0-6464-4502-8fb8-a728c120c812",
+      "officerName": "Officer Test Water Staff",
+      "officerEmail": "test.water.staff.1791621144134@civic.gov",
+      "officerPhone": "+91 9999988888",
+      "departmentId": "d2",
+      "departmentName": "Water Supply",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Coimbatore",
+      "zone": "North Zone",
+      "areaWard": "All Areas",
+      "designation": "Field Inspector",
+      "maxWorkload": 15,
+      "active": true
+    },
+    {
+      "id": "assign-1791886804181",
+      "officerId": "cf17c164-6ce9-4b55-8153-7beed1aafd39",
+      "officerName": "mathi",
+      "officerEmail": "mathi@gmail.com",
+      "officerPhone": "+91 9080237451",
+      "departmentId": "dept-elec",
+      "departmentName": "Electricity & Lighting",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "All Areas",
+      "designation": "Field Officer",
+      "maxWorkload": 15,
+      "active": true
+    },
+    {
+      "id": "assign-1791887919664",
+      "officerId": "81d2ecbb-2880-40a1-acc9-c14fa1c46d10",
+      "officerName": "Karthik Officer",
+      "officerEmail": "karthik.officer@civic.gov",
+      "officerPhone": "+91 9845012345",
+      "departmentId": "d2",
+      "departmentName": "Water Supply",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "All Areas",
+      "designation": "Field Inspector",
+      "maxWorkload": 15,
+      "active": true
+    },
+    {
+      "id": "assign-1792407221995",
+      "officerId": "dbd3b0c9-4c7d-4894-8645-351ea5c50fb7",
+      "officerName": "shreeja",
+      "officerEmail": "shreejad06@gmail.com",
+      "officerPhone": "+91 9788117454",
+      "departmentId": "dept-elec",
+      "departmentName": "Electricity & Lighting",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Annur",
+      "zone": "Zone 1",
+      "areaWard": "All Areas",
+      "designation": "Field Officer",
+      "maxWorkload": 15,
+      "active": true
+    },
+    {
+      "id": "assign-1792407293689",
+      "officerId": "b97657f8-769c-43bd-8b4d-67b4cbe80e73",
+      "officerName": "lathika",
+      "officerEmail": "lathika@gmail.com",
+      "officerPhone": "+91 7968541256",
+      "departmentId": "dept-elec",
+      "departmentName": "Electricity & Lighting",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Erode",
+      "zone": "Zone 1",
+      "areaWard": "All Areas",
+      "designation": "Field Officer",
+      "maxWorkload": 15,
+      "active": true
+    },
+    {
+      "id": "assign-b97657f8-769c-43bd-8b4d-67b4cbe80e73-dept-trans-mettupalayam",
+      "officerId": "b97657f8-769c-43bd-8b4d-67b4cbe80e73",
+      "officerName": "lathika",
+      "officerEmail": "lathika@gmail.com",
+      "officerPhone": "+91 7968541256",
+      "departmentId": "dept-trans",
+      "departmentName": "Public Transport",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "city": "Mettupalayam",
+      "zone": "Central Zone",
+      "areaWard": "Mettupalayam Sector",
+      "designation": "Field Officer",
+      "maxWorkload": 15,
+      "active": true
+    }
+  ]
+}
